@@ -39,10 +39,17 @@
             </div>
         </div>
 
-        
+        <tr>
+            <div class="form-group">
+            @Html.DisplayName("Personagem")
+                <div class="col-md-6">
+                    @Html.DropDownListFor(model => model.PersonagemId, new SelectList(@ViewBag.ListaPersonagens, "Id",
+                "Nome"),
+                "---Selecione---", new { @class = "form-control" })
+                </div>
+            </div>
+        </tr>
                
-
-
         <div class="form-group">
             <div class="col-md-offset-2 col-md-6">
                 <input type="submit" value="Salvar alterações" class="btn btn-primary" />

@@ -41,16 +41,6 @@
                     , new { onclick = "return confirm('Deseja realmente deletar esta arma ?');"}) 
             </td>
         </tr>
-        <tr>
-            <div class="form-group">
-            @Html.DisplayName("Personagem")
-                <div class="col-md-6">
-                    @Html.DropDownListFor(model => model.PersonagemId, new SelectList(@ViewBag.listaPersonagens, "Id",
-                "Nome"),
-                "---Selecione---", new { @class = "form-control" })
-                </div>
-            </div>
-        </tr>
     }  
 
       
